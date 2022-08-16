@@ -171,7 +171,9 @@ jQuery(document).ready(function () {
     }
 
 });
-
+jQuery('#categories .dropdown > a').click(function () {
+            location.href = this.href;
+        });
 jQuery(function () { 
     jQuery('.cat-nav .dropdown > a').attr("aria-expanded","false");
     jQuery('.cat-nav .dropdown > a').attr("aria-haspopup","true");
